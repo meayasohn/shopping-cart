@@ -12,7 +12,7 @@
       "gender": "male",
       "size": "large",
       "color": "pink",
-      "image": "../img//pink_p.png"
+      "image": "../img/pink_p.png"
     },
     {
       "type": "skirt",

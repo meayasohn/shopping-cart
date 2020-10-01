@@ -15,22 +15,22 @@ function createHTMLString(item) {
 
 function displayItems(items) {
   const container = document.querySelector(".items");
-  ////container.innterHTML = items.map(item ==> createHTMLString(item)).join('');  ellie's coding
+  ////container.innterHTML = items.map(item ==> createHTMLString(item)).join('');
   container.innerHTML = items.map((item) => createHTMLString(item)).join("");
   console.log(container.innerHTML);
 
-  // items.forEach((element) => {
-  //   let item = document.createElement("li");
-  //   item.classList.add("item");
-  //   item.innerHTML = `<img src=${element.image}
-  //   alt=${element.type}
-  //   class="item__thumnail">
-  //   <span class="item__description">
-  //   ${element.gender}, ${element.size}
-  //   </span>`;
+  items.forEach((element) => {
+    let item = document.createElement("li");
+    item.classList.add("item");
+    item.innerHTML = `<img src=${element.image}
+    alt=${element.type}
+    class="item__thumnail">
+    <span class="item__description">
+    ${element.gender}, ${element.size}
+    </span>`;
 
-  //   container.appendChild(item);
-  // });
+    container.appendChild(item);
+  });
 }
 
 function onButtonClick(event, items) {
